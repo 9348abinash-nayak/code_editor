@@ -14,7 +14,7 @@ dotenv.config()
 const app = express();
 
 app.use(cors({
-  origin: "*",
+  origin: "https://code-editor-abinash.vercel.app",
   methods: ["GET", "POST"]
 }));
 app.use(express.json())
