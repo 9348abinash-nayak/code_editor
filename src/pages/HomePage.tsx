@@ -77,8 +77,8 @@ export default function HomePage() {
 
     // Set endpoint and body based on the mode
     const endpoint = modalMode === "create" 
-      ? "http://localhost:8000/room/create" 
-      : "http://localhost:8000/room/join";
+      ? " https://code-editor-0dot.onrender.com/room/create" 
+      : " https://code-editor-0dot.onrender.com/room/join";
 
  const body = modalMode === "create"
   ? {

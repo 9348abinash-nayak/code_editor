@@ -477,8 +477,8 @@ const handleVisibilityChange = () => {
  const handleLockRoom = async () => {
   try {
     const endpoint = isLocked
-      ? "http://localhost:8000/room/unlocked"
-      : "http://localhost:8000/room/locked";
+      ? " https://code-editor-0dot.onrender.com/room/unlocked"
+      : " https://code-editor-0dot.onrender.com/room/locked";
 
     const response = await fetch(endpoint, {
       method: "POST",
@@ -521,7 +521,7 @@ const handleVisibilityChange = () => {
     setIsLoading(true);
     setOutput("Running code...");
     try {
-      const response = await fetch("http://localhost:8000/code/run", {
+      const response = await fetch(" https://code-editor-0dot.onrender.com/code/run", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ roomId, code, language, input: "" }),
